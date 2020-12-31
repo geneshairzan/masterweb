@@ -16,6 +16,7 @@ class role
         $user = Auth::user();
 
         if ($user->isAdmin())
+            // return $next($request);
             return $next($request);
 
         foreach ($roles as $role) {

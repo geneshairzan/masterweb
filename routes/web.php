@@ -32,3 +32,14 @@ Route::get('/logout', [AuthController::class, 'logout']);
 
 Route::get('auth/{provider}', [AuthController::class, 'redirectToProvider']);
 Route::get('auth/{provider}/callback', [AuthController::class, 'handleProviderCallback']);
+
+
+// Route::group(['prefix' => 'admin',  'middleware' => 'admin'], function () {
+//     //All the routes that belongs to the group goes here
+//     Route::view('/', 'admin.dashboard');
+// });
+
+Route::group(['prefix' => 'admin',  'middleware' => 'role:admin'], function () {
+    //All the routes that belongs to the group goes here
+    Route::view('/', 'admin.dashboard');
+});
