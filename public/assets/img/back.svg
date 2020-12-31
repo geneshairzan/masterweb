@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <path id="jolbirazpa" d="M8.061 16.707c.195.195.451.293.707.293.256 0 .512-.098.707-.293.391-.39.391-1.024 0-1.414L3.989 9.806H16.6c.553 0 1-.447 1-1 0-.552-.447-1-1-1H4.04L9.527 2.32c.391-.391.391-1.024 0-1.414-.391-.391-1.024-.391-1.414 0L.893 8.125C.706 8.313.6 8.567.6 8.832c0 .265.106.52.293.707l7.168 7.168z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(3 3)">
+        <mask id="0fuqgynkeb" fill="#fff">
+            <use xlink:href="#jolbirazpa"/>
+        </mask>
+        <use fill="#000" xlink:href="#jolbirazpa"/>
+        <g fill="#FFF" mask="url(#0fuqgynkeb)">
+            <path d="M0 0L24 0 24 24 0 24z" transform="translate(-3 -3)"/>
+        </g>
+    </g>
+</svg>
