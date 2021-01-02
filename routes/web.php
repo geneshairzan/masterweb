@@ -43,3 +43,12 @@ Route::group(['prefix' => 'admin',  'middleware' => 'role:admin'], function () {
     //All the routes that belongs to the group goes here
     Route::view('/', 'admin.dashboard');
 });
+
+
+Route::group(['prefix' => 'glass'], function () {
+    //All the routes that belongs to the group goes here
+    Route::view('/', 'glass_demo.login');
+    Route::view('/login', 'glass_demo.login');
+    Route::view('/home', 'glass_demo.home');
+    Route::view('/home2', 'glass_demo.home2');
+});

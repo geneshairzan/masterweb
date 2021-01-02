@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-@include('_partial.head')
+<head>
+    @include('_partial.head')
+    <link rel="stylesheet" href="{{asset('css/alpha_menu.css') }}">
+    <link rel="stylesheet" href="{{asset('css/bootstrap-icons.css') }}">
+</head>
 
 <body>
-    <div class="tbar_header">
-        <div class="row">
-            <div class="col">
-                <div class="text-left m-3"><img id="nav_btn" src="{{ asset('img/user-burger-menu.svg') }}" alt="" class="pointer_unset"></div>
-            </div>
+    @include('_partial.nav.alpha_nav')
 
-        </div>
-        <h4 class="text-light position-absolute" style="top: 16px; left: 56px;"> @yield('page_title')</h4>
-    </div>
-
-    <div class="bg_gr_dark px-5">
+    <div class="bg_gr_dark" style="height: 300vh;">
         @yield('body_content')
     </div>
 
@@ -22,6 +18,8 @@
     @include('_partial/scripts')
 
     @yield('modal')
+
+    <script src="{{asset('js/alpha_menu.js') }}"></script>
 
 </body>
 

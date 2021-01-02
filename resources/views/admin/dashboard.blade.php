@@ -1,17 +1,28 @@
-<!-- Menghubungkan dengan view template master -->
-@extends('layouts.admin_master')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('page_title', 'Admin Dashboard')
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass UI</title>
 
+    <link rel="stylesheet" href="{{asset('css/bootstrap-icons.css') }}">
+    <link rel="stylesheet" href="{{asset('css/style.css') }}">
 
-<!-- isi bagian konten -->
-<!-- cara penulisan isi section yang panjang -->
-@section('body_content')
+</head>
 
-<h3 class="text-dark pt-32">Welcome</h3>
-Welcome admin.
+<body>
+    <div class="glass_cover"> </div>
+    <div class="glass_menu">
+        <!-- NAV -->
+    </div>
 
+    <img src="{{asset('img/glassBg/1.jpg')}}" alt="" class="bg_img ">
 
+    <div class=" " style="height: 300vh;">
 
+        <!-- BODY -->
+    </div>
+</body>
 
-@endsection
+</html>
